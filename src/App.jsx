@@ -2,11 +2,12 @@ import React, { useState } from "react";
 import "./App.css";
 import About from "./components/About.js";
 import Navbar from "./components/Navbar.js";
-import Alert from "./components/Alert.js";
+import Alert from './components/Alert.js'
+
 
 import TextForm from "./components/TextForm.js";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 function App() {
   const [mode, setMode] = useState("light"); // sate Variable -: whether
   //dark mode is enabled or not
@@ -45,36 +46,36 @@ function App() {
   };
   return (
     <>
-      {/*<Navbar
+      <Router>
+      <Navbar
         title="TextUtils"
         mode={mode}
-       toggleMode={toggleMode}
+        toggleMode={toggleMode}
         aboutText="About TextUtils" 
-      /> */}
-      <Router>
-        <Routes>
-          <Navbar
+      />
+       <Alert alert={alert} />
+      
+        <Routes
             title="TextUtils"
             mode={mode}
             toggleMode={toggleMode}
             aboutText="About TextUtils"
-          />
-          <Alert alert={alert} />
-          <div className="container my-3">
-            <Route exact path="/about">
-              <About />
-            </Route>
+          >
+          
+          
+            <Route exact path="/about" element={<About />}/>
+             
 
-            <Route exact path="/">
-              <TextForm
+            <Route exact path="/" element={<TextForm
                 showAlert={showAlert}
                 heading="Enter the text to analyze below"
                 mode={mode}
-              />
+              />}>
+              
             </Route>
 
-            {/*<About />*/}
-          </div>
+            
+          
         </Routes>
       </Router>
     </>
