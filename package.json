@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "pagenation",
+=======
+  "name": "textutils",
+>>>>>>> adfc5bb08206072cf66d1ba4e442e90018fc843f
   "version": "0.1.0",
   "private": true,
   "dependencies": {

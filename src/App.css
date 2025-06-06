@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .App {
   text-align: center;
 }
@@ -69,4 +70,95 @@
 }
 .active {
   background-color: aqua;
+=======
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f1f3f6;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.center-container {
+  width: 90%;
+  max-width: 500px;
+}
+
+.input-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+  background-color: white;
+  padding: 12px 16px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.input-box-todo {
+  flex: 1;
+  border: none;
+  font-size: 16px;
+  outline: none;
+  background: transparent;
+}
+
+.add-btn {
+  background-color: #1e74f0;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.add-btn:hover {
+  background-color: #1663d2;
+}
+
+.list-wrapper {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list-item {
+  background-color: white;
+  margin-bottom: 15px;
+  padding: 16px;
+  border-radius: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.task-title {
+  font-weight: bold;
+  font-size: 17px;
+  color: #1a1a1a;
+}
+
+.task-date {
+  font-size: 14px;
+  color: #6b6b6b;
+}
+
+.delete-btn {
+  background-color: #ef4444;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.delete-btn:hover {
+  background-color: #dc2626;
+>>>>>>> adfc5bb08206072cf66d1ba4e442e90018fc843f
 }
