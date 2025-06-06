@@ -36,3 +36,37 @@
     transform: rotate(360deg);
   }
 }
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  width: 160px;
+  border: 1px solid black;
+  padding: 5px;
+  margin: 5px;
+}
+
+.product-img {
+  width: 150;
+  height: 150px;
+}
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.page-number {
+  padding: 7px;
+  margin: 2px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+.pagenation-container {
+  padding: 20px;
+}
+.active {
+  background-color: aqua;
+}
